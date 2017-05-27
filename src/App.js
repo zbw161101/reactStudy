@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 // import logo from './logo.svg'
 import './App.css'
-import listItems from './listItems'
+import {NumberList} from './listItems'
 import LoginControl from './isLogoin'
 import Clock from './Clock'
 import Toggle from './Toggle'
@@ -20,9 +20,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <listItems />
-        </ul>
+        <NumberList key="zzz"/>
         <LoginControl/>
         <Clock/>
         <Toggle/>
