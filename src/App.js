@@ -1,8 +1,12 @@
 import React, {Component} from 'react'
 // import logo from './logo.svg'
 import './App.css'
+import listItems from './listItems'
+import LoginControl from './isLogoin'
+import Clock from './Clock'
+import Toggle from './Toggle'
 import Comment from './Comment'
-import Clock from './Clock/index'
+
 import {comment} from './data'
 
 class App extends Component {
@@ -14,9 +18,14 @@ class App extends Component {
   }
 
   render() {
-    return(
+    return (
       <div>
-        <Clock date={new Date()}/>
+        <ul>
+          <listItems />
+        </ul>
+        <LoginControl/>
+        <Clock/>
+        <Toggle/>
         <Comment
           date={comment.date}
           text={comment.text}
