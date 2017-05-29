@@ -9,6 +9,8 @@ function ListItem(props) {
   )
 }
 
+// const map = Function.prototype.call.bind(Array.prototype.map)
+
 export function NumberList(props) {
   const numbers = [1, 2, 3, 4, 5]
   return (

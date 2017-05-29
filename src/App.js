@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 // import logo from './logo.svg'
 import './App.css'
+import {forms} from './forms'
 import {NumberList} from './listItems'
 import LoginControl from './isLogoin'
 import Clock from './Clock'
@@ -20,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <forms/>
         <NumberList key="zzz"/>
         <LoginControl/>
         <Clock/>
