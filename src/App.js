@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 // import logo from './logo.svg'
 import './App.css'
+import CounterButton from './btn'
 import CustomTextInput from './Refs'
 import Calculator from './stateUp'
 import {NameForm} from './forms'
@@ -23,6 +24,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <CounterButton/>
         <CustomTextInput/>
         <Calculator scale="c"/>
         <Calculator scale="f"/>
