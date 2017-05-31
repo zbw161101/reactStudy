@@ -2,6 +2,7 @@
  * Created by ZhaoBoWen on 2017/5/30.
  */
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const scaleNames = {
   c: 'Celsius',
@@ -54,6 +55,10 @@ class TemperatureInput extends React.Component {
       </fieldset>
     );
   }
+}
+
+TemperatureInput.propTypes = {
+  scale: PropTypes.string
 }
 
 export default class Calculator extends React.Component {
