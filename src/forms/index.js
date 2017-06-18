@@ -10,7 +10,6 @@ class Reservation extends React.Component {
       isGoing: true,
       numberOfGuests: 2
     };
-
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
